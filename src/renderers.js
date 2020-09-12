@@ -50,7 +50,7 @@ class Finger extends PureComponent {
       <TouchableOpacity onPress={this.buttonPress}
         style={[styles.button, { left: x, top: y, borderRadius: radius * 2, width: radius * 2, height: radius * 2 }]} 
       >
-        <Animatable.View 
+        <Animatable.View  
           animation="pulse" 
           easing="linear" 
           duration={500} 
@@ -61,7 +61,7 @@ class Finger extends PureComponent {
           <AnimatedCircularProgress
             ref={(ref) => this.circularProgress = ref}
             size={(radius * 2)}
-            width={10}
+            width={5}
             fill={100}
             style={styles.border}
             tintColor="gray"
